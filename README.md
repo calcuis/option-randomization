@@ -126,7 +126,7 @@ model 1 and 2 mixed: Math.random()*6
 
 `(swap==3?c:(swap==4?b:(swap==5?a:d)))`
 
-**Remarks on Mixed Mode:** assuming 'All of the Above' is absent in 4-option items but is allowed in 3-option items; specific settings on random range might apply.
+**Remarks on Mixed Mode:** assuming 'All of the Above' is absent in 4-option items but it is present in 3-option items; specific settings on random range might apply (refer to the random sytnax above).
 
 ### Summary
 

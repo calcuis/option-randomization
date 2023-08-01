@@ -10,7 +10,7 @@ c. option 3
 
 d. option 4
 
-**Possible combination** = 6*4 = 24
+**Possible combinations:** 6*4 = 24
 
 `[a, b, c, d] [b, a, c, d] [c, a, b, d] [d, a, b, c]`
 `[a, b, d, c] [b, a, d, c] [c, a, d, b] [d, a, c, b]`

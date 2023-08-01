@@ -1,6 +1,6 @@
 ## option randomization mode
 
-For a testing item with two or more options (i.e., four options below):
+For a testing item with two or more options (i.e., four options below as an example):
 
 a. option 1
 
@@ -25,51 +25,51 @@ mode#1: Math.random()*3
 
 mode#2: Math.random()*(6-3+1)+3)
 
-mode#2|#1Mixed: Math.random()*6
+mode#2|#1mixed: Math.random()*6
 
 ### model#0
 
-a
-b
-c
-d
+`a`
+`b`
+`c`
+`d`
 
 ### model#1**
 
-((item.d && swap==2)?c:(swap==1?b:a))
+`((item.d && swap==2)?c:(swap==1?b:a))`
 
-(swap==1?a:b)
+`(swap==1?a:b)`
 
-((item.d && swap==2)?a:c)
+`((item.d && swap==2)?a:c)`
 
 ### model#2**
 
-(swap==3?b:(swap==4?c:(swap==5?d:a)))
+`(swap==3?b:(swap==4?c:(swap==5?d:a)))`
 
-(swap==3?a:(swap==4?d:(swap==5?c:b)))
+`(swap==3?a:(swap==4?d:(swap==5?c:b)))`
 
-(swap==3?d:(swap==4?a:(swap==5?b:c)))
+`(swap==3?d:(swap==4?a:(swap==5?b:c)))`
 
-(swap==3?c:(swap==4?b:(swap==5?a:d)))
+`(swap==3?c:(swap==4?b:(swap==5?a:d)))`
 
 ### models#1&#2mixed (unfinished/intermediate)**
 
-((swap==1 || swap==3)?b:((swap==2 || swap==4)?c:(swap==5?d:a)))
+`((swap==1 || swap==3)?b:((swap==2 || swap==4)?c:(swap==5?d:a)))`
 
-((swap==1 || swap==3)?a:(swap==4?d:(swap==5?c:b)))
+`((swap==1 || swap==3)?a:(swap==4?d:(swap==5?c:b)))`
 
-((swap==2 || swap==4)?a:(swap==3?d:(swap==5?b:c)))
+`((swap==2 || swap==4)?a:(swap==3?d:(swap==5?b:c)))`
 
-(swap==3?c:(swap==4?b:(swap==5?a:d)))
+`(swap==3?c:(swap==4?b:(swap==5?a:d)))`
 
 ### models#1&#2mixed (finished/final)**
 
-((swap==1 || (item.d && swap==3))?b:(((item.d && swap==2) || (item.d && swap==4))?c:((item.d && swap==5)?d:a)))
+`((swap==1 || (item.d && swap==3))?b:(((item.d && swap==2) || (item.d && swap==4))?c:((item.d && swap==5)?d:a)))`
 
-((swap==1 || (item.d && swap==3))?a:((item.d && swap==4)?d:((item.d && swap==5)?c:b)))
+`((swap==1 || (item.d && swap==3))?a:((item.d && swap==4)?d:((item.d && swap==5)?c:b)))`
 
-(((item.d && swap==2) || (item.d && swap==4))?a:((item.d && swap==3)?d:((item.d && swap==5)?b:c)))
+`(((item.d && swap==2) || (item.d && swap==4))?a:((item.d && swap==3)?d:((item.d && swap==5)?b:c)))`
 
-(swap==3?c:(swap==4?b:(swap==5?a:d)))
+`(swap==3?c:(swap==4?b:(swap==5?a:d)))`
 
 **To be continued... (explanation will be added soon)**

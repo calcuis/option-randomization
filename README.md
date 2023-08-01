@@ -10,7 +10,7 @@ c. option 3
 
 d. option 4
 
-**Possible combinations:** 6*4 = 24
+**possible combinations:** 6*4 = 24
 
 `[a, b, c, d] [b, a, c, d] [c, a, b, d] [d, a, b, c]`
 `[a, b, d, c] [b, a, d, c] [c, a, d, b] [d, a, c, b]`
@@ -27,14 +27,14 @@ mode#2: Math.random()*(6-3+1)+3)
 
 mode#2|#1mixed: Math.random()*6
 
-### model#0
+### model 0
 
 `a`
 `b`
 `c`
 `d`
 
-### model#1**
+### model 1
 
 `((item.d && swap==2)?c:(swap==1?b:a))`
 
@@ -42,7 +42,7 @@ mode#2|#1mixed: Math.random()*6
 
 `((item.d && swap==2)?a:c)`
 
-### model#2**
+### model 2
 
 `(swap==3?b:(swap==4?c:(swap==5?d:a)))`
 
@@ -52,7 +52,7 @@ mode#2|#1mixed: Math.random()*6
 
 `(swap==3?c:(swap==4?b:(swap==5?a:d)))`
 
-### models#1&#2mixed (unfinished/intermediate)**
+### models 1 and 2 mixed mode (unfinished/intermediate)
 
 `((swap==1||swap==3)?b:((swap==2||swap==4)?c:(swap==5?d:a)))`
 
@@ -62,7 +62,7 @@ mode#2|#1mixed: Math.random()*6
 
 `(swap==3?c:(swap==4?b:(swap==5?a:d)))`
 
-### models#1&#2mixed (finished/final)**
+### models 1 and 2 mixed mode (finished/final)
 
 `((swap==1||(item.d && swap==3))?b:(((item.d && swap==2)||(item.d && swap==4))?c:((item.d && swap==5)?d:a)))`
 

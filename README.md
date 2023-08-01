@@ -8,7 +8,7 @@ In this session, we will discuss how to randomize the options in a multiple-choi
 
 Then, we will delve into strategies for wisely selecting optimal combinations to maintain test integrity and enhance the assessment process.
 
-Finally, we will propose basic models for completing the entire process.
+Last but not least, we will propose basic models for fullfiling the entire randomization process.
 
 **A typical 4-option item:**
 

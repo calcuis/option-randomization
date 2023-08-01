@@ -1,4 +1,4 @@
-## Option randomization mode
+## Option randomization models
 
 Multiple-choice item banks are widely used in educational assessments and standardized testing.
 

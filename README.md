@@ -21,11 +21,15 @@ d. option 4
 `[a, d, b, c] [b, d, a, c] [c, d, a, b] [d, c, a, b]`
 `[a, d, c, b] [b, d, c, a] [c, d, b, a] [d, c, b, a]`
 
-mode#1: Math.random()*3
+**random syntax**
 
-mode#2: Math.random()*(6-3+1)+3)
+model 0: n/a
 
-mode#2|#1mixed: Math.random()*6
+model 1: Math.random()*3
+
+model 2: Math.random()*(6-3+1)+3)
+
+model 1 and 2 mixed: Math.random()*6
 
 ### model 0
 

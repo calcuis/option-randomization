@@ -54,21 +54,21 @@ mode#2|#1mixed: Math.random()*6
 
 ### models#1&#2mixed (unfinished/intermediate)**
 
-`((swap==1 || swap==3)?b:((swap==2 || swap==4)?c:(swap==5?d:a)))`
+`((swap==1||swap==3)?b:((swap==2||swap==4)?c:(swap==5?d:a)))`
 
-`((swap==1 || swap==3)?a:(swap==4?d:(swap==5?c:b)))`
+`((swap==1||swap==3)?a:(swap==4?d:(swap==5?c:b)))`
 
-`((swap==2 || swap==4)?a:(swap==3?d:(swap==5?b:c)))`
+`((swap==2||swap==4)?a:(swap==3?d:(swap==5?b:c)))`
 
 `(swap==3?c:(swap==4?b:(swap==5?a:d)))`
 
 ### models#1&#2mixed (finished/final)**
 
-`((swap==1 || (item.d && swap==3))?b:(((item.d && swap==2) || (item.d && swap==4))?c:((item.d && swap==5)?d:a)))`
+`((swap==1||(item.d && swap==3))?b:(((item.d && swap==2)||(item.d && swap==4))?c:((item.d && swap==5)?d:a)))`
 
-`((swap==1 || (item.d && swap==3))?a:((item.d && swap==4)?d:((item.d && swap==5)?c:b)))`
+`((swap==1||(item.d && swap==3))?a:((item.d && swap==4)?d:((item.d && swap==5)?c:b)))`
 
-`(((item.d && swap==2) || (item.d && swap==4))?a:((item.d && swap==3)?d:((item.d && swap==5)?b:c)))`
+`(((item.d && swap==2)||(item.d && swap==4))?a:((item.d && swap==3)?d:((item.d && swap==5)?b:c)))`
 
 `(swap==3?c:(swap==4?b:(swap==5?a:d)))`
 

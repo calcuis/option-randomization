@@ -88,7 +88,7 @@ model 1 and 2 mixed: Math.random()*6
 `c`
 `d`
 
-### Model 1
+### Model 1 - For the last option includes 'All of the Above' (in 3|4-option item)
 
 `((item.d && swap==2)?c:(swap==1?b:a))`
 
@@ -96,7 +96,7 @@ model 1 and 2 mixed: Math.random()*6
 
 `((item.d && swap==2)?a:c)`
 
-### Model 2
+### Model 2 - No restriction options (4-option item)
 
 `(swap==3?b:(swap==4?c:(swap==5?d:a)))`
 
@@ -126,6 +126,8 @@ model 1 and 2 mixed: Math.random()*6
 
 `(swap==3?c:(swap==4?b:(swap==5?a:d)))`
 
-**Summary**
+**Remarks on Mixed Mode:** assuming 'All of the Above' is absent in 4-option items but is allowed in 3-option items; specific settings on random range might apply.
 
-Randomizing options in a multiple-choice item bank is a crucial step in creating fair and reliable tests. While a 4-option multiple-choice item has 24 possible combinations, it is not necessary to include all of them. Instead, careful consideration of content representation, item difficulty, statistical analysis, cognitive levels, and bias elimination should guide the selection of optimal combinations. With the proposed models, we would like to kick start an open discussion, at least, a certain insight. By adopting these strategies, educators and test developers can create assessments that accurately measure test-takers' knowledge and skills while upholding the integrity of the testing process.
+### Summary
+
+Randomizing options in a multiple-choice item bank is a crucial step in creating fair and reliable tests. While a 4-option multiple-choice item has 24 possible combinations, it is not necessary to include all of them. Instead, careful consideration of content representation, item difficulty, statistical analysis, cognitive levels, and bias elimination should guide the selection of optimal combinations. With the proposed models, we would like to kick start an open discussion, at least, provide a certain insight of interest. By adopting these strategies, educators and test developers can create assessments that accurately measure test-takers' knowledge and skills while upholding the integrity of the testing process.

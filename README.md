@@ -6,9 +6,11 @@ One crucial aspect of creating a fair and reliable test is the randomization of 
 
 In this session, we will discuss how to randomize the options in a multiple-choice item bank, explore the number of possible combinations for a 4-option multiple-choice item, and consider the need for including all possibilities.
 
-Additionally, we will delve into strategies for wisely selecting optimal combinations to maintain test integrity and enhance the assessment process.
+Then, we will delve into strategies for wisely selecting optimal combinations to maintain test integrity and enhance the assessment process.
 
-A typical 4-option item:
+Finally, we will propose basic models for completing the entire process.
+
+**A typical 4-option item:**
 
 a. option 1
 
@@ -18,7 +20,7 @@ c. option 3
 
 d. option 4
 
-**Number of Possible Combinations for a 4-option Multiple-Choice Item:**
+**Number of possible combinations for a 4-option item:**
 
 In a multiple-choice item with four options, there are 24 possible ways to arrange the answer choices.
 
@@ -37,7 +39,7 @@ In this case, it's 4P4 = 4! = 4 x 3 x 2 x 1 = 24.
 `[a, d, b, c] [b, d, a, c] [c, d, a, b] [d, c, a, b]`
 `[a, d, c, b] [b, d, c, a] [c, d, b, a] [d, c, b, a]`
 
-**Randomizing Options in a Multiple-Choice Item Bank:**
+**Randomizing options in a multiple-choice item bank:**
 
 Randomizing options is an essential step in item development to eliminate any unintended patterns that may influence test-takers' choices.
 
@@ -45,8 +47,29 @@ To randomize the options, each question must have the same number of answer choi
 
 This process is usually automated through computer software, ensuring that each test taker receives a unique and unbiased set of options.
 
+**Do we need to include all possibilities (option combinations)?**
 
-**random syntax**
+While there are 24 possible combinations, it is not necessary to include all of them in the item bank.
+
+Instead, a subset of these arrangements should be strategically selected to maintain the test's integrity and ensure that it evaluates the intended knowledge and skills of the test-takers effectively.
+
+Including all possible combinations would lead to an impractical number of test versions and could compromise the quality and security of the assessment.
+
+**Selecting the optimal combination(s) wisely:**
+
+To select the optimal combination(s) for a multiple-choice item, various factors should be considered:
+
+**Content representation:** Ensure that each combination represents the content and learning objectives being assessed. A well-designed test should have a balanced representation of topics and difficulty levels.
+
+**Item difficulty:** Consider the difficulty level of each combination to create a test with a suitable range of item difficulties. This will provide a better discrimination between high and low-performing test-takers.
+
+**Statistical analysis:** Conduct statistical analyses, such as item analysis, to identify combinations that perform well in distinguishing between strong and weak students. This can help to refine the item bank and improve the overall test quality.
+
+**Cognitive levels:** Align each combination with specific cognitive levels, such as remembering, understanding, applying, analyzing, evaluating, and creating. This ensures that the test assesses various cognitive skills and abilities.
+
+**Bias elimination:** Randomize options to minimize any potential bias introduced by the order of choices. This can prevent systematic patterns that could give away the correct answer or influence test-takers' decisions.
+
+**Random syntax**
 
 model 0: n/a
 
@@ -56,38 +79,16 @@ model 2: Math.random()*(6-3+1)+3)
 
 model 1 and 2 mixed: Math.random()*6
 
-**Do We Need to Include All Possibilities (Option Combinations)?**
-
-While there are 24 possible combinations, it is not necessary to include all of them in the item bank.
-
-Instead, a subset of these arrangements should be strategically selected to maintain the test's integrity and ensure that it evaluates the intended knowledge and skills of the test-takers effectively.
-
-Including all possible combinations would lead to an impractical number of test versions and could compromise the quality and security of the assessment.
-
-**Selecting the Optimal Combination(s) Wisely:**
-
-To select the optimal combination(s) for a multiple-choice item, various factors should be considered:
-
-**Content Representation:** Ensure that each combination represents the content and learning objectives being assessed. A well-designed test should have a balanced representation of topics and difficulty levels.
-
-**Item Difficulty:** Consider the difficulty level of each combination to create a test with a suitable range of item difficulties. This will provide a better discrimination between high and low-performing test-takers.
-
-**Statistical Analysis:** Conduct statistical analyses, such as item analysis, to identify combinations that perform well in distinguishing between strong and weak students. This can help to refine the item bank and improve the overall test quality.
-
-**Cognitive Levels:** Align each combination with specific cognitive levels, such as remembering, understanding, applying, analyzing, evaluating, and creating. This ensures that the test assesses various cognitive skills and abilities.
-
-**Bias Elimination:** Randomize options to minimize any potential bias introduced by the order of choices. This can prevent systematic patterns that could give away the correct answer or influence test-takers' decisions.
-
 **Proposed models for option randomization**
 
-### model 0
+### Model 0
 
 `a`
 `b`
 `c`
 `d`
 
-### model 1
+### Model 1
 
 `((item.d && swap==2)?c:(swap==1?b:a))`
 
@@ -95,7 +96,7 @@ To select the optimal combination(s) for a multiple-choice item, various factors
 
 `((item.d && swap==2)?a:c)`
 
-### model 2
+### Model 2
 
 `(swap==3?b:(swap==4?c:(swap==5?d:a)))`
 
@@ -105,7 +106,7 @@ To select the optimal combination(s) for a multiple-choice item, various factors
 
 `(swap==3?c:(swap==4?b:(swap==5?a:d)))`
 
-### models 1 and 2 mixed mode (unfinished/intermediate)
+### Models 1 and 2 Mixed Mode (unfinished/intermediate)
 
 `((swap==1||swap==3)?b:((swap==2||swap==4)?c:(swap==5?d:a)))`
 
@@ -115,7 +116,7 @@ To select the optimal combination(s) for a multiple-choice item, various factors
 
 `(swap==3?c:(swap==4?b:(swap==5?a:d)))`
 
-### models 1 and 2 mixed mode (finished/final)
+### Models 1 and 2 Mixed Mode (finished/final)
 
 `((swap==1||(item.d && swap==3))?b:(((item.d && swap==2)||(item.d && swap==4))?c:((item.d && swap==5)?d:a)))`
 

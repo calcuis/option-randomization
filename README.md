@@ -49,11 +49,11 @@ This process is usually automated through computer software, ensuring that each 
 
 **Do we need to include all possibilities (option combinations)?**
 
-While there are 24 possible combinations, it is not necessary to include all of them in the item bank.
+While there are 24 possible combinations, it is not necessary to include all of them in the option randomization process.
 
 Instead, a subset of these arrangements should be strategically selected to maintain the test's integrity and ensure that it evaluates the intended knowledge and skills of the test-takers effectively.
 
-Including all possible combinations would lead to an impractical number of test versions and could compromise the quality and security of the assessment.
+Including all possible combinations would lead to an impractical number of test versions and could compromise the quality and security of the assessment (partially agree).
 
 **Selecting the optimal combination(s) wisely:**
 
